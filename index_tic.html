@@ -1,0 +1,56 @@
+<html>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+</style>
+
+<head>
+  <link rel="stylesheet" href="xds.css">
+</head>
+
+<body>
+  <center>
+    <h2 style="color:darkgreen; font-size: 40px;"></h2style>Tic Tac Toe</h2>
+    <h2 style="color:darkgreen; font-size: 30px;"></h2style>Click to Start</h2>
+    <h2  style="color:darkgreen; font-size: 30px;"></h2style>Player 1: X , Player 2: O</h2>
+
+    <table style="border: none;">
+      <tr>
+        <td><input style="border: none; width: 100px; height: 100px;" type=”submit” value="" readonly id="txtbox1"
+            onclick="change('txtbox1'); if(this.value=='X')  { this.style.color = 'black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox2"
+            onclick="change('txtbox2');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox3"
+            onclick="change('txtbox3');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+      </tr>
+      <tr>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox4"
+            onclick="change('txtbox4');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox5"
+            onclick="change('txtbox5'); if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox6"
+            onclick="change('txtbox6');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+      </tr>
+      <tr>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox7"
+            onclick="change('txtbox7');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox8"
+            onclick="change('txtbox8');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+        <td><input style="border: none; width: 100px; height: 100px;" type="text" value="" readonly id="txtbox9"
+            onclick="change('txtbox9');  if(this.value=='X')  { this.style.color = ' black';   }   " /></td>
+      </tr>
+
+    </table>
+
+    <p id="scores" style="font-size:20; color: darkgreen;"></p>
+    <p id="game_result" style="font-size:20; color: darkgreen;"></p>
+  </center>
+</body>
+<script src="code.js"></script>
+
+
+
+</html>
